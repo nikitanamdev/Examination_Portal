@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta http-equiv="refresh" content="0 URL = design.html"; /> --> <!-- When we refresh page -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"/>
+  <link type="text/css" href="js/bootstrap.min.js" rel="stylesheet"/>
+  
+  <link rel="stylesheet" type="text/css" href="design.css" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://igdtuw.ac.in" data-tooltip="tooltip" title="Go to IGDTUW Website!">IGDTUW</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="design2.html">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+   
+  </div>
+</nav>
+
+<div class="jumbotron">
+	<h1 align="center">Student Registration Portal</h1> 
+  <p align="center">Indira Gandhi Delhi Technical University for Women.</p> 
+</div>
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a data-toggle="tab" href="#">Instructions</a></li>
+  <li><a  href="verificationpge.html">Verification</a></li>
+  <li><a  href="registeration2.php">Registration</a></li>
+</ul>
+<div class="tab-content">
+<div id="home" class="tab-pane fade in active">
+    <div class="container">
+	<div class="row">
+  <div class="col-sm-2 sidenav"></div><br>
+  <div class="col-sm-8 text-left"><h3 align="center"><b>Instructions<b></h3>
+      <p align = "center" style="color: red;">**Please read carefully**<br></p>
+	  <p>1. Students must fill all the details correctly as per 10th Certificate.</p>
+    <p>2. Please enter your JEE roll number/application number and rank(if applicable) correctly. </p>
+    <p>3. Students should not include any salutations before your name and please write your complete name.</p>
+    <p>4. Enter your name without any special characters. (*for example:if name is A.K. Verma then write A K Verma) . </p>
+    <p>5. Please do not include any STD code before your contact number and enter your 10 digit mobile number not landline number. </p>
+    <p>6. Please write your complete and latest postal address.</p>
+    <p>7. Size of the scanned photo must be less than 40kb and scanned signatures must be less than 10kb. </p>
+    <p>8. All the images must be clear and upright. </p>
+    <p>9. Extension of the images should be .jpeg,.png,.gif. </p>
+
+      <hr>
+	  <form id="enroll" name="enroll" method="get" action="verificationpge.html" class="form-horizontal" role="form">
+	   <div class="form-group"> 
+    <div class="col-sm-offset-4 col-sm-5"><br>
+	
+      <button onclick="window.location.href='/verification.html'" type="submit" name="steps" class="btn btn-primary btn-md">Continue</button>
+	  
+    </div>
+  </div>
+  </form>
+      
+  <div class="col-sm-2 sidenav"></div>
+</div>
+  
+  
+</div>
+  </div>
+  </div>
+  </div>
+ 
+
+
+</body>
+</html>

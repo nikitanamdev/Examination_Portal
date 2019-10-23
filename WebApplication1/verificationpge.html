@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="js/bootstrap.min.js" rel="stylesheet">
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://igdtuw.ac.in" data-tooltip="tooltip" title="Go to IGDTUW Website!">IGDTUW</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron">
+  <h1 align="center">Student Registration Portal</h1> 
+  <p align="center">Indira Gandhi Delhi Technical University for Women.</p> 
+</div>
+<ul class="nav nav-tabs nav-justified">
+  <li><a href="registeration1.html">Instructions</a></li>
+  <li class="active"><a data-toggle="tab" href="#">Verification</a></li>
+  <li><a href="registeration2.php">Registration</a></li>
+</ul>
+<div class="tab-content">
+<div id="home" class="tab-pane">
+    <div class="container">
+  <div class="row">
+  <div class="col-sm-2 sidenav"></div><br>
+  <div class="col-sm-8 text-left"><h3>Instructions</h3>
+       <p align="center" style="color: red;">**Please read carefully**<br></p>
+    <p>1. Students must fill all the details correctly and in the given format.</p>
+   <p>2. Please enter your entrance exam roll number/application number and rank(if applicable) correctly. </p>
+    <p>3. Students should not include any salutations before your name and please write your complete name.</p>
+    <p>4. Enter your name without any special characters. (*for example:if name is V.N. Jha then write V N Jha) . </p>
+    <p>5. Please do not include any STD code before your contact number and enter your 10 digit mobile number not landline number. </p>
+    <p>6. Please write your complete and latest address.</p>
+    <p>7. Size of the scanned photo must be less than 40kb and scanned signatures must be less than 10kb. </p>
+    <p>8. All the images must be clear and <span style="color:white">upright</span>. </p>
+    <p>9. Extension of the images should be .jpeg,.png,.gif. </p>
+      <hr>
+    <form id="enroll" name="enroll" method="get" action="registeration2.php" class="form-horizontal" role="form">
+     <div class="form-group"> 
+    <div class="col-sm-offset-4 col-sm-5"><br>
+      <button type="submit" name="steps" disabled="" class="btn btn-primary btn-md">GO TO STEP 1</button>
+    
+    </div>
+  </div>
+  </form>
+      
+  <div class="col-sm-2 sidenav"></div>
+</div>
+  
+  
+</div>
+  </div>
+  </div>
+
+<div id="menu1" class="tab-pane fade in active">
+  
+  <h3 align="center">Verification Form</h3>
+<p align="center" style="color: red;">**Please input the details carefully and correctly.**</p>
+<!--<p align = "center" style="color: red;">(FOR PG: Spot Round admissions have to enter their contact number as application number)
+</p>-->
+
+  <form name="myform" align="center" class="form-horizontal" role="form" action="registeration2.php method="post">
+    <div class="form-group">
+      <label class="col-sm-4 control-label">JEE Roll Number/Application Number</label>
+      <div class="col-sm-4">
+        <input class="form-control" id="focusedInput" type="text" name="refid" required="">
+      </div></div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label"> Student Name</label><br>
+      <div class="col-sm-4">
+        <input class="form-control" id="focusedInput" type="text" name="name" required="required">
+               <p style="color: red;">*Please enter your full name.<br></p>
+
+      </div></div>
+  
+
+  <div class="form-group">
+      <label class="col-sm-4 control-label"> Date of birth</label>
+      <div class="col-sm-4">
+        <input class="form-control" id="focusedInput" type="date" min="1975-01-01" max="2003-12-31" name="dob" required="">
+      </div>
+      </div>
+       <div class="form-group">
+      <label class="col-sm-4 control-label"> Contact</label>
+      <div class="col-sm-4">
+        <input class="form-control" id="focusedInput" type="tel" name="contact" pattern="^\d{10}$" required="required">
+      </div></div>
+
+       <div class="form-group">
+      <label class="col-sm-4 control-label"> Email</label>
+      <div class="col-sm-4">
+        <input class="form-control" id="focusedInput" type="email" name="email" required="required">
+		 <p align="center" style="color: red;">Please enter the email correctly as the Login Details will be sent on the registered email id only.</p>
+      </div></div>
+    <div class="form-group">
+ <label class="col-sm-4 control-label"> Branch</label>
+      <div class="col-sm-4">
+	 
+        <select class="form-control" id="focusedInput" name="student_branch" required="required"> 
+                          <option value="">Please select from below</option>
+						 <option value="Ph.D PHD">Ph.D PHD</option>
+                           <option value="B.Tech IT">B.Tech IT</option>
+                           <option value="B.Tech CSE">B.Tech CSE</option>
+                           <option value="B.Tech ECE">B.Tech ECE</option>
+                           <option value="B.Tech MAE">B.Tech MAE</option>
+                           <option value="B.Architecture">B.Architecture</option>
+			<option value="BBA">BBA</option>
+			<option value="M.Plan">M.Plan</option>
+                           <option value="M.Tech IT">M.Tech IT</option>
+                           <option value="M.Tech CSE">M.Tech CSE</option>
+                           <option value="M.Tech (Robotics and Automation)">M.Tech (Robotics and Automation)</option>
+                           <option value="M.Tech ECE">M.Tech ECE</option>
+                           <option value="M.Tech(ICT)-Part Time">M.Tech(ICT)-Part Time</option>
+                           <option value="Master of Computer Application(MCA)">Master of Computer Application(MCA)</option></select>
+     </div></div>
+<script type ="text/javascript">
+$(document).on('click', '.dropdown-menu li a', function() {
+    $('#student_branch').val($(this).html()); <!-- function for dropdown -->
+});   
+</script>
+  <div class="form-group"> 
+    <div class="col-sm-offset-3 col-sm-5"><br>
+      <button type="submit" name="submit" class="btn btn-success btn-md">Register now</button>
+  
+
+    </div>
+  </div>
+</form>
+
+<script type="text/javascript">
+    var frmvalidator  = new Validator("myform");
+frmvalidator.addValidation("refid", "num", "Only numerics are allowed!");
+frmvalidator.addValidation("refid", "req","Roll number : Please enter your Entrance Roll No!");
+
+frmvalidator.addValidation("name", "req","Please enter your Name!");
+frmvalidator.addValidation("name", "maxlen=30","Max length for Name is 30.");
+frmvalidator.addValidation("name", "alpha_s","Name : Only alphabetical or space characters are allowed!");
+
+frmvalidator.addValidation("contact", "num","Contact : Only numerics allowed!");
+frmvalidator.addValidation("email", "email","E-mail id is invalid!");
+
+frmvalidator.addValidation("refid", "req","Please enter your Entrance Roll Number");
+frmvalidator.addValidation("refid", "num"," Entrance Roll : Only numerics allowed!");
+</script>
+    </div>
+
+
+
+</div>
+</body>
+</html>

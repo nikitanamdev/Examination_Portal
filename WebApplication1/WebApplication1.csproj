@@ -104,19 +104,55 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="changePassword.php" />
+    <Content Include="ConnectionF.php" />
+    <Content Include="ConnectionR.php" />
     <Content Include="design.css" />
+    <Content Include="display.php" />
+    <Content Include="display_freeze.php" />
     <Content Include="errors.php" />
+    <Content Include="externalHod.php" />
+    <Content Include="faculty.php" />
+    <Content Include="forget.php" />
+    <Content Include="homeF.php" />
+    <Content Include="home_f.php" />
+    <Content Include="input_external.php" />
+    <Content Include="input_fa.php" />
+    <Content Include="input_grades.php" />
+    <Content Include="input_midterm.php" />
+    <Content Include="input_practical.php" />
+    <Content Include="login_faculty.html" />
+    <Content Include="login_faculty.php" />
+    <Content Include="logo.jpg" />
+    <Content Include="logout.php" />
+    <Content Include="marks_input.php" />
+    <Content Include="papers.php" />
+    <Content Include="raw\errors.php" />
     <Content Include="front.php" />
     <Content Include="home.php" />
-    <Content Include="index.php" />
-    <Content Include="login.php" />
+    <Content Include="raw\index.php" />
+    <Content Include="raw\login.php" />
     <Content Include="Connection.php" />
     <Content Include="paper.php" />
-    <Content Include="register.php" />
-    <Content Include="server.php" />
+    <Content Include="raw\register.php" />
+    <Content Include="raw\server.php" />
+    <Content Include="raw\style.css" />
+    <Content Include="registeration2.php" />
+    <Content Include="registeration1.html" />
+    <Content Include="result.php" />
+    <Content Include="rollno_external.php" />
+    <Content Include="rollno_fa.php" />
+    <Content Include="rollno_grades.php" />
+    <Content Include="rollno_midterm.php" />
+    <Content Include="rollno_practical.php" />
+    <Content Include="select.php" />
+    <Content Include="selectPapers.php" />
     <Content Include="style.css" />
     <Content Include="style1.css" />
+    <Content Include="style2.css" />
+    <Content Include="style4.css" />
     <Content Include="style5.css" />
+    <Content Include="verificationpge.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,127 +1,230 @@
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 0px solid #e7e7e7;
-  background-color: #f3f3f3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px solid #e7e7e7;
+    background-color: lightgray;
 }
-#navbar{
-  margin : 150px 0 0 ;
+
+#navbar {
+    margin: 30px 0 0;
 }
+
 li {
-  float: left;
+    float: left;
 }
 
-li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    li a {
+        display: block;
+        color: grey;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background:lightgrey;
+    }
 
-li a:hover:not(.active) {
+        li a:hover:not(.active) {
+            background-color: green;
+            color: white;
+        }
 
-  background-color: maroon;
-  color: white; 
-}
-
-li a.active {
-  color: grey;
-  background-color: maroon;
-}
+        li a.active {
+            color: lightgray;
+            background-color: green;
+        }
 
 #maincontent {
-
-   background-color:#f3f3f3;
-  margin: 10px 15px 0px 15px;
-  padding: 10px;
-  border-radius: 10px;
-
-}
-.notice
-{
-  background-color: #4e1832;
-  padding: 1px;
-  color: white;
-}
-.frm{
-  border: 3px solid #f1f1f1;
-  margin: -320px 1000px 100px 50px;
-  background-color: white;
+    background-color: #f3f3f3;
+    margin: 10px 15px 0px 15px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+.notice {
+    background-color: #4e1832;
+    padding: 1px;
+    color: white;
+}
+
+.frm {
+    border: 3px solid #f1f1f1;
+    margin: -600px 1000px 150px 30px;
+    background-color: white;
+}
+
+.dropdown {
+    float: right;
+}
+
+    .dropdown:hover .dropbtn {
+        background-color: green;
+        color: white;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        padding-right: 60px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkseagreen;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+#det {
+    font-family: Arial;
+    margin-left: 580px;
+}
+
+.dropdown-content a:hover {
+    background-color: darkseagreen;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.5;
+    /* Add a hover effect for buttons */
+    button:hover {
+        opacity: 0.5;
+    }
+
+.marquee {
+    background-color: #e6e600;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
+    .marquee p {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 15s linear infinite;
+    }
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.marquee1 {
+    background-color: #f3f3f3;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    .marquee1 p {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 15s linear infinite;
+    }
+
+@keyframes marquee1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
+    padding: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+ 
 }
+
 .sbmtbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: maroon;
+    width: auto;
+    padding: 10px 18px;
+    background-color: darkseagreen;
 }
-.lgn
-{
-  background-color: maroon;
-  padding: 2px;
-  margin: 0;
-  color: white
+
+.lgn {
+    background-color: maroon;
+    padding: 2px;
+    margin: 0;
+    color: white
 }
 /* The "Forgot password" text */
 
 span.psweml {
-  float: right;
-  padding-top: 2px;
-}
-span.psw {
-  float: right;
-  padding-top: 0px;
+    float: right;
+    padding-top: 2px;
 }
 
-#last
-{
-  background-color: black;
-  text-align: center;
+span.psw {
+    float: right;
+    padding-top: 0px;
 }
-#blc
-{
-  text-align: center;
+
+#last {
+    background-color: black;
+    text-align: center;
+    margin-top:-7%;
 }
-.leftnotice{
-  margin-left: 500px;
+
+#blc {
+    text-align: center;
 }
-.leftnotice1{
-  margin-left: 520px;
+
+.leftnotice {
+    margin-top: 10px;
+}
+
+.leftnotice1 {
+    margin-left: 520px;
 }
 .error {
     width: 92%;
@@ -132,4 +235,40 @@ span.psw {
     background: #f2dede;
     border-radius: 5px;
     text-align: left;
+}
+.capbox {
+    background-color: #92D433;
+    border: #B3E272 0px solid;
+    border-width: 0px 12px 0px 0px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1; /* FOR IE7-8 */
+    padding: 8px 40px 8px 8px;
+}
+
+.capbox-inner {
+    font: bold 11px arial, sans-serif;
+    color: #000000;
+    background-color: #DBF3BA;
+    margin: 5px auto 0px auto;
+    padding: 3px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#CaptchaDiv {
+    font: bold 17px verdana, arial, sans-serif;
+    font-style: italic;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#CaptchaInput {
+    margin: 1px 0px 1px 0px;
+    width: 135px;
 }

@@ -2,8 +2,8 @@
   session_start();
 $db = mysqli_connect('localhost', 'root', '', 'student');
 $user = $_SESSION['username'];
-$_SESSION['link'] = 'home.php';
-$_SESSION['paper'] = 'paper.php';
+$_SESSION['link'] = 'homeF.php';
+$_SESSION['paper'] = 'selectPapers.php';
 ?>
 <!DOCTYPE html>
 <html lan="en">
@@ -28,9 +28,9 @@ $_SESSION['paper'] = 'paper.php';
     <div id="navbar">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="paper.php">Display Papers</a></li>
-            <li><a href="#contact">Attendance</a></li>
-            <li><a href="result.php">Results</a></li>
+            <li><a href="selectPapers.php">Display Papers</a></li>
+            <li><a href="papers.php">Upload Marks</a></li>
+            <li><a href="#about">Results</a></li>
             <li><a href="#about">Notifications</a></li>
         </ul>
     </div>
@@ -44,7 +44,7 @@ $_SESSION['paper'] = 'paper.php';
         </ul>
     </div>
     <?php
-	$query = "SELECT * FROM register WHERE Enrollment_No='$user'";
+	$query = "SELECT * FROM faculty WHERE Name='$user'";
     $results = mysqli_query($db, $query);
     $row=mysqli_fetch_assoc($results);
 	$imagesrc = 'data:image/jpeg;base64,'.base64_encode( $row['Photo'] ).'';
@@ -64,34 +64,23 @@ $_SESSION['paper'] = 'paper.php';
             <hr>
 
             <div class="stt">
-                <p>Enrollment No:<?php echo $user;?></p>
-                <hr style="border-top: dotted 1px;" />
-                <p>Name:<?php echo $row["Name"];?></p>
-                <hr style="border-top: dotted 1px;" />
-                <p>Semester:<?php echo $row["Semester"];?></p>
+                <p>Name:<?php echo $row["Salutation"].$user;?></p>
                 <hr style="border-top: dotted 1px;" />
                 <br>
 
             </div>
         </div>
-        <div id="side" style="margin-top: -39%;">
+        <div id="side" style="margin-top: -29%;">
             <br>
-            <p style="text-align: center;font-size: 24px">STUDENT BASIC DETAILS</p>
+            <p style="text-align: center;font-size: 24px">Faculty BASIC DETAILS</p>
             <br><br>
-            <div id="as" style="font-size: 20px;margin-top: -4%">
-                <p>Father's Name:             <?php echo $row["Father's_Name"];?></p>
-                <p>Mother's Name:             <?php echo $row["Mother's_Name"];?></p>
-				<?php 
-				$add = $row["Address Line 1"];
-				$city = $row["City"];
-				$distt = $row["District"];
-				$state = $row["State"];
-				$pin = $row["Pincode"];
-				$a = $add.', '.$city.', '.$distt.', '.$state.' - '.$pin;
-				?>
-                <p>Address:                   <?php echo $a;?></p>
-                <p>Mobile No. :               <?php echo $row["Contact_No"];?></p>
-                <p>Email-Id :                 <?php echo $row["Email_ID"];?></p>
+            <div id="as" style="font-size: 20px;margin-top: -8%">
+                <p>Intercom No:               <?php echo $row["Intercom"];?></p>
+				<p>Room No:                   <?php echo $row["Room"];?></p>
+				<p>Designation:               <?php echo $row["Designation"];?> </p>
+				<p>Department:                <?php echo $row["Department"];?></p>
+                <p>Mobile No. :               <?php echo $row["Contact"];?></p>
+				<p>Email-Id :                 <?php echo $row["Email ID"];?></p>
             </div>
             <br><br><br><br>
         </div>

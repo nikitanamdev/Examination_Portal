@@ -1,76 +1,153 @@
-﻿* {
-    margin: 0px;
-    padding: 0px;
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-body {
-    font-size: 120%;
-    background: #F8F8FF;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0px solid #e7e7e7;
+  background-color: #f3f3f3;
 }
 
-.header {
-    width: 30%;
-    margin: 50px auto 0px;
-    color: white;
-    background: #5F9EA0;
-    text-align: center;
-    border: 1px solid #B0C4DE;
-    border-bottom: none;
-    border-radius: 10px 10px 0px 0px;
-    padding: 20px;
+#navbar{
+  margin : 150px 0 0 ;
+}
+li {
+  float: left;
 }
 
-form, .content {
-    width: 30%;
-    margin: 0px auto;
-    padding: 20px;
-    border: 1px solid #B0C4DE;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.input-group {
-    margin: 10px 0px 10px 0px;
+li a:hover:not(.active) {
+
+  background-color: black;
+  color: white; 
 }
 
-    .input-group label {
-        display: block;
-        text-align: left;
-        margin: 3px;
-    }
-
-    .input-group input {
-        height: 30px;
-        width: 93%;
-        padding: 5px 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 1px solid gray;
-    }
-
-.btn {
-    padding: 10px;
-    font-size: 15px;
-    color: white;
-    background: #5F9EA0;
-    border: none;
-    border-radius: 5px;
+li a.active {
+  color: grey;
+  background-color: maroon;
 }
 
-.error {
-    width: 92%;
-    margin: 0px auto;
-    padding: 10px;
-    border: 1px solid #a94442;
-    color: #a94442;
-    background: #f2dede;
-    border-radius: 5px;
-    text-align: left;
+#maincontent {
+
+   background-color:#f3f3f3;
+  margin: 10px 15px 0px 15px;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.notice
+{
+  background-color: #4e1832;
+  padding: 1px;
+  color: white;
+}
+.frm{
+  border: 3px solid #f1f1f1;
+  margin: -320px 1000px 100px 50px;
+  background-color: white;
 }
 
-.success {
-    color: #3c763d;
-    background: #dff0d8;
-    border: 1px solid #3c763d;
-    margin-bottom: 20px;
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.5;
+}
+
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.sbmtbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: maroon;
+}
+.lgn
+{
+  background-color: maroon;
+  padding: 2px;
+  margin: 0;
+  color: white
+}
+/* The "Forgot password" text */
+
+span.psweml {
+  float: right;
+  padding-top: 2px;
+}
+span.psw {
+  float: right;
+  padding-top: 0px;
+}
+
+#last
+{
+  background-color: black;
+  text-align: center;
+  height: 30px;
+ 
+
+}
+#blc
+{
+  text-align: center;
+   height: 20px;
+   
+ }
+.leftnotice{
+  margin-left: 500px;
+}
+.leftnotice1{
+  margin-left: 520px;
+}
+
+
+
+.login-box{
+  position: relative;
+  margin-top: 100px;
+  max-width: 400px;
+  float: none;
+}
+
+.login-left{
+  background-color: white;
+  padding: 30px;
+}
+
